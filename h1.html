@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap-3.3.7\css\bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap-3.3.7\js\jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7\js\bootstrap.min.js"></script>
+</head>
+<body style="margin: 10px 20px;">
+	
+<button class="btn btn-default" onclick="cl()">lala</button>
+
+<hr>
+	<p class="active-tab"><strong>激活的标签页</strong>：<span></span></p>
+	<p class="previous-tab"><strong>前一个激活的标签页</strong>：<span></span></p>
+<hr>
+
+<div class="dropdown">
+	<button data-toggle="dropdown">下拉菜单</button>
+	<ul class="dropdown-menu">
+		<li class="dropdown-header">这是标题</li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li class="divider"></li>
+		<li><a href="#">4</a></li>
+	</ul>
+</div>
+
+
+<button type="button" class="btn btn-success" 
+    data-toggle="button"> 单个切换
+</button>
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="panel-title">
+			panel题目
+			<a data-toggle="collapse" data-target="#demo">collapse</a>
+		</div>
+	</div>
+	<div id="demo" class="panel-body collapse fade in">
+		这是一个最基本的panel。
+		<h2>sdfsadlkf</h2>
+		<p>asldkfhjslahfsadhf</p>
+		<p>sdfsdaf</p>
+	</div>
+	<div class="panel-footer">
+		这是panel脚注
+	</div>
+</div>
+
+<button class="btn btn-success" data-toggle="collapse" data-target="#collapsediv">collapse</button>
+<div id="collapsediv" class="collapse fade in">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<div class="panel-title">
+				panel title
+			</div>
+		</div>
+		<div class="panel-body">
+			<p>sdfsd</p>
+			<p>dfsdf</p>
+		</div>
+	</div>
+	
+</div>
+
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">这是标题</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a data-toggle="dropdown" href="#">下拉菜单链接</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">这是第一部分标题</li>
+						<li><a href="">a</a></li>
+						<li><a href="">b</a></li>
+						<li class="divider"></li>
+						<li><a href="">c</a></li>
+						<li><a href="">d</a></li>
+					</ul>
+				</li>
+				<li><a href="#">b</a></li>
+				<li><a href="#">c</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<ul class="nav nav-pills">
+	<li class="active"><a href="">a</a></li>
+	<li><a data-target="#b11" data-toggle="tab">b11</a></li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#">下拉菜单</a>
+		<ul class="dropdown-menu">
+			<li><a href="">a</a></li>
+			<li><a href="#b11" data-toggle="tab">b11</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+	</li>
+	<li><a href="#">d</a></li>
+</ul>
+<div class="tab-content">
+	<div class="tab-pane fade" id="b11">
+		<h1>sdfsdfsdaf</h1>
+		<p>dsfdf</p>
+		<p>sdfsdfasdf</p>
+	</div>
+</div>
+
+
+
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active">
+        <a href="#home" data-toggle="tab">
+            菜鸟教程
+        </a>
+    </li>
+    <li><a href="#ios" data-toggle="tab">iOS</a></li>
+    <li class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+           data-toggle="dropdown">Java
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+            <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+        </ul>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+    </div>
+    <div class="tab-pane fade" id="ios">
+        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+    </div>
+    <div class="tab-pane fade" id="jmeter">
+        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+    </div>
+    <div class="tab-pane fade" id="ejb">
+        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+        </p>
+    </div>
+</div>
+
+
+
+
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">主题
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">Java</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+        </li>
+    </ul>
+</div>
+
+	<script type="text/javascript">
+		function cl(){
+			alert("ddd");
+		}
+	</script>
+	<script>
+		$(function(){
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+				// 获取已激活的标签页的名称
+				var activeTab = $(e.target).text(); 
+				// 获取前一个激活的标签页的名称
+				var previousTab = $(e.relatedTarget).text(); 
+				$(".active-tab span").html(activeTab);
+				$(".previous-tab span").html(previousTab);
+			});
+		});
+</script>
+</body>
+</html>
